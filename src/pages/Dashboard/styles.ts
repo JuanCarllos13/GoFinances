@@ -1,8 +1,10 @@
+import {BorderlessButton} from 'react-native-gesture-handler'
 import styled from "styled-components/native";
 import {FlatList, FlatListProps} from 'react-native'
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
 import { Feather } from '@expo/vector-icons'
 import {DataListProps} from '.'
+
 
 export const Container = styled.View`
   flex: 1;
@@ -61,7 +63,7 @@ export const UserName = styled.Text`
   line-height: 24px;
   font-family: ${({ theme }) => theme.fonts.bold};
 `
-
+export const LogoutButton = styled(BorderlessButton)``
 
 export const Icon = styled(Feather)`
   color: ${({ theme }) => theme.colors.secondary};
@@ -98,6 +100,5 @@ export const TransactionsList = styled(
   ).attrs({
   showsVerticalScrollIndicator: false
 })`
-
 
 `

@@ -16,7 +16,8 @@ import {
   HighlightCards,
   Transactions,
   Title,
-  TransactionsList
+  TransactionsList,
+  LogoutButton
 } from './styles'
 
 export interface DataListProps extends TransactionCardProps {
@@ -25,7 +26,7 @@ export interface DataListProps extends TransactionCardProps {
 
 
 export function Dashboard() {
-  const data:DataListProps[] = [
+  const data: DataListProps[] = [
     {
       id: '1',
       type: 'positivo',
@@ -72,7 +73,7 @@ export function Dashboard() {
               <UserName>Juan</UserName>
             </User>
           </UserInfo>
-          <Icon name={'power'} />
+            <Icon name={'power'} />
         </UserWrapper>
       </Header>
 

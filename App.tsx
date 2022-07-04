@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import 'react-native-gesture-handler';
+import React from 'react';
 import { ThemeProvider } from 'styled-components'
 
 import * as SplashScreen from 'expo-splash-screen';
@@ -10,9 +11,12 @@ import {
   Poppins_700Bold
 } from '@expo-google-fonts/poppins'
 
-import { Dashboard } from './src/pages/Dashboard';
+import { AppRoutes } from './src/routes/app.routes'
 
 import theme from './src/global/styles/theme'
+
+import { NavigationContainer } from '@react-navigation/native'
+
 
 export default function App() {
   SplashScreen.preventAutoHideAsync();
@@ -28,9 +32,11 @@ export default function App() {
   SplashScreen.hideAsync();
 
   return (
-    <ThemeProvider theme={theme}>
-      <Dashboard />
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <NavigationContainer>
+          <AppRoutes />
+        </NavigationContainer>
+      </ThemeProvider>
   )
 }
 
