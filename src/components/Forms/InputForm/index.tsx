@@ -3,7 +3,6 @@ import { Container, Error } from './styles'
 import { Input } from '../input'
 import { TextInputProps } from "react-native";
 import { Control, Controller, FieldError } from "react-hook-form";
-import {FormData} from '../../../pages/Register'
 
 
 interface Props extends TextInputProps {
