@@ -17,7 +17,7 @@ import {
 // }
 
 export interface TransactionCardProps {
-  type: 'positivo' | 'negative',
+  type: 'positive' | 'negative',
   name: string,
   amount: string,
   category: String,

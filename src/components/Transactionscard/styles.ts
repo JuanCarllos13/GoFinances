@@ -4,7 +4,7 @@ import { RFValue } from "react-native-responsive-fontsize";
 
 
 interface TransactionType {
-  type: 'positivo' | 'negative',
+  type: 'positive' | 'negative',
 }
 
 export const Container = styled.View`
@@ -23,7 +23,7 @@ export const Title = styled.Text`
 export const Amount = styled.Text<TransactionType>`
     font-size: ${RFValue(20)}px;
     font-family: ${({theme}) => theme.fonts.regular};
-    color: ${({theme, type}) => type === 'positivo' ? theme.colors.success : theme.colors.attention};
+    color: ${({theme, type}) => type === 'positive' ? theme.colors.success : theme.colors.attention};
     margin-top: 2px;
 `
 
