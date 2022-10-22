@@ -8,12 +8,11 @@ import {
   Category,
   Icon,
   CategoryName,
-  Date
-} from './styles'
-
+  Date,
+} from "./styles";
 
 export interface TransactionCardProps {
-  type: 'positive' | 'negative';
+  type: "positive" | "negative";
   name: string;
   amount: string;
   category: string;
@@ -21,22 +20,19 @@ export interface TransactionCardProps {
 }
 
 interface Props {
-  data: TransactionCardProps
+  data: TransactionCardProps;
 }
 
-
 export function TransactionCard({ data }: Props) {
-  const category = categories.filter(
-    item => item.key === data.category
-  )[0]
+  const category = categories.filter((item) => item.key === data.category)[0];
 
   return (
     <Container>
       <Title>{data.name}</Title>
 
       <Amount type={data.type}>
-      {data.type === 'negative' && '- '}
-      {data.amount}
+        {data.type === "negative" && "- "}
+        {data.amount}
       </Amount>
 
       <Footer>
@@ -46,7 +42,6 @@ export function TransactionCard({ data }: Props) {
         </Category>
         <Date>{data.date}</Date>
       </Footer>
-
     </Container>
-  )
+  );
 }
