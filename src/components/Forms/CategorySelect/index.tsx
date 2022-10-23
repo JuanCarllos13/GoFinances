@@ -1,23 +1,17 @@
 import React from "react";
-import { 
-  Container,
-  Category,
-  Icon,
-} from './styles'
+import { TouchableOpacityProps } from "react-native";
+import { Container, Category, Icon } from "./styles";
 
-
-interface Props {
+interface Props extends TouchableOpacityProps {
   title: string;
-  onPress: () => void,
+  onPress: () => void;
 }
 
-export function SelectCategory({ title, onPress }: Props) {
+export function SelectCategory({ title, testID, onPress }: Props) {
   return (
-    <Container onPress={onPress}>
-      <Category>
-        {title}
-      </Category>
+    <Container onPress={onPress} testID={testID}>
+      <Category>{title}</Category>
       <Icon name="chevron-down" />
     </Container>
-  )
+  );
 }
