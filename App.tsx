@@ -1,15 +1,7 @@
-import "react-native-gesture-handler";
+import React from "react";
+import { ThemeProvider } from "styled-components";
 import "intl";
 import "intl/locale-data/jsonp/pt-BR";
-
-import React from "react";
-import { StatusBar } from "react-native";
-import AppLoading from "expo-app-loading";
-import { ThemeProvider } from "styled-components";
-
-import { Routes } from "./src/routes";
-
-import { AuthProvider, useAuth } from "./src/hook/auth";
 
 import {
   useFonts,
@@ -18,7 +10,11 @@ import {
   Poppins_700Bold,
 } from "@expo-google-fonts/poppins";
 
+import AppLoading from "expo-app-loading";
 import theme from "./src/global/styles/theme";
+import { Routes } from "./src/routes";
+import { AuthContextProvider } from "./src/contexts/AuthContext";
+import { useAuth } from "./src/hook/auth";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -27,19 +23,17 @@ export default function App() {
     Poppins_700Bold,
   });
 
-  const { userStorageLoading } = useAuth();
+  const { storageLoading } = useAuth();
 
-  if (!fontsLoaded || userStorageLoading) {
+  if (!fontsLoaded || storageLoading) {
     return <AppLoading />;
   }
 
   return (
-    <ThemeProvider theme={theme}>
-      <StatusBar barStyle="light-content" />
-
-      <AuthProvider>
+    <AuthContextProvider>
+      <ThemeProvider theme={theme}>
         <Routes />
-      </AuthProvider>
-    </ThemeProvider>
+      </ThemeProvider>
+    </AuthContextProvider>
   );
 }
