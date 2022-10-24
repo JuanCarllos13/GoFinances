@@ -16,24 +16,8 @@
     },
     "android": {
       "package": "com.gofinances.Juancarlos13",
-      "versionCode": 3,
-      "permissions": [
-        "ACCESS_COARSE_LOCATION",
-        "ACCESS_FINE_LOCATION",
-        "ACCESS_BACKGROUND_LOCATION",
-        "INTERNET",
-        "SYSTEM_ALERT_WINDOW",
-        "WAKE_LOCK",
-        "MANAGE_DOCUMENTS",
-        "READ_INTERNAL_STORAGE",
-        "READ_PHONE_STATE",
-        "USE_FINGERPRINT",
-        "INSTALL_SHORTCUT",
-        "VIBRATE",
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE",
-        "WRITE_SETTINGS"
-      ]
+      "versionCode": 4,
+      "permissions": []
     },
     "extra": {
       "eas": {
