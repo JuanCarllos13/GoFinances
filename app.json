@@ -13,11 +13,11 @@
       "backgroundColor": "#000000"
     },
     "ios": {
-      "bundleIdentifier": "com.GoFinances.juanCarllos13",
+      "bundleIdentifier": "com.gofinancesJuancarlos13",
       "buildNumber": "1.0.0"
     },
     "android": {
-      "package": "com.GoFinances.juanCarllos13",
+      "package": "com.gofinancesJuancarlos13",
       "versionCode": 1
     },
     "extra": {

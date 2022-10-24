@@ -1,4 +1,4 @@
-package com.gofinances.newarchitecture.components;
+package com.gofinancesJuancarlos13.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;
