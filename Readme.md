@@ -4,7 +4,8 @@
 
 <div align="center">
 
-https://user-images.githubusercontent.com/86435195/189503527-4021578a-5a28-4caa-9bfd-cf07a31a2cf7.mp4
+![Graph](https://user-images.githubusercontent.com/86435195/197552145-53a02085-05f8-42f0-af7e-0aa79d44479c.png)
+
 
 </div>
 
