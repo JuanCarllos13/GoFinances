@@ -1,4 +1,4 @@
-package com.gofinancesJuancarlos13.newarchitecture;
+package com.gofinances.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.gofinancesJuancarlos13.BuildConfig;
-import com.gofinancesJuancarlos13.newarchitecture.components.MainComponentsRegistry;
-import com.gofinancesJuancarlos13.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.gofinances.BuildConfig;
+import com.gofinances.newarchitecture.components.MainComponentsRegistry;
+import com.gofinances.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

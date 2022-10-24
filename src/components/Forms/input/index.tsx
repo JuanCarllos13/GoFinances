@@ -8,5 +8,5 @@ interface Props extends TextInputProps {
 }
 
 export function Input({ active = false, ...rest }: Props) {
-  return <Container active {...rest} />;
+  return <Container active={false} {...rest} />;
 }
